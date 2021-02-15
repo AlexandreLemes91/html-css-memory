@@ -2,6 +2,11 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
+    font-family: 'Nerko One', cursive;
+}
+
+body{
+    background-color: lightskyblue;
 }
 
 .clearfix{
@@ -10,24 +15,78 @@
     clear: both;
 }
 
+/* header */
+header > h1{
+    max-width: 1000px; 
+    margin: 50px auto;
+    color: whitesmoke;
+    font-size: 100px;
+    text-align: center;
+}
+
 /* main */
 main{
-    width: 1000px;
-    background-color: green;  
-    margin: 50px auto;  
+    max-width: 1000px; 
+    margin: 30px auto;  
 }
 
 /* container */
-.container div{
-    float: left;
-    height: 200px;
-    width: calc(1000px / 4 - 25px);
-    margin-left: 20px;
-    background-color: red;
+.container{
+    padding-top: 25px;
 }
 
-.container div:last-child{
+.container:last-child{
+    padding-bottom: 25px;
+}
+
+.container > .card{
+    position: relative;
+    float: left;
+    width: calc(1000px / 4 - 25px);
+    margin-left: 20px;
+    background-color: whitesmoke;
+    color: orange;
+    font-size: 25px;
+    text-align: center;
+    text-shadow: 2px 2px 2px black;
+    box-shadow: 2px 2px 2px black;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.container > div:last-child{
     margin-right: 20px;
 }
 
 /* cards */
+.card > img{
+    max-width: 100%;
+}
+
+.cover{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-image: url(../img/pattern.png);
+    background-size: contain;
+    border-radius: 15px;
+}
+
+.card:hover > .cover{
+    display: none;
+}
+
+.card.uncovered{
+    color: fuchsia;
+}
+
+/* footer */
+footer{
+    max-width: 1000px; 
+    margin: 30px auto;
+    color: black;
+    font-size: 20px;
+    text-align: center;
+}
