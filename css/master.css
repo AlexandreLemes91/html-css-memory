@@ -3,3 +3,31 @@
     margin: 0px;
     box-sizing: border-box;
 }
+
+.clearfix{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* main */
+main{
+    width: 1000px;
+    background-color: green;  
+    margin: 50px auto;  
+}
+
+/* container */
+.container div{
+    float: left;
+    height: 200px;
+    width: calc(1000px / 4 - 25px);
+    margin-left: 20px;
+    background-color: red;
+}
+
+.container div:last-child{
+    margin-right: 20px;
+}
+
+/* cards */
