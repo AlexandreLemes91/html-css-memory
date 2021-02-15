@@ -31,15 +31,13 @@ main{
 }
 
 /* container */
-.container{
-    padding-top: 25px;
-}
 
 .container:last-child{
     padding-bottom: 25px;
 }
 
 .container > .card{
+    margin-top: 25px;
     position: relative;
     float: left;
     width: calc(1000px / 4 - 25px);
